@@ -1,0 +1,37 @@
+:root{
+ --color-verde-neon: #DaFF01; 
+ --color-roxo-choque: #9353FF;
+}
+.facilidades-icons{
+    font-size: 4.5rem;
+}
+.facilidades-text-principal{
+    font-size: 1,25rem;
+}
+.facilidades-text-secundario{
+    font-size: 1rem;
+}
+.facilidades{
+    background-color: gray;
+}
+.facilidades-container{
+    width: 200px;
+}
+.cadastrar-container{
+    width: 500px;
+}
+.color-green{
+    color: var(--color-verde-neon);
+}
+.button-buy{
+    background-color: var(--color-roxo-choque);
+    width: 120px;
+}
+.posicao{
+    top: 65%;
+}
+@media (max-width: 767px){
+    .posicao{
+        top: 50%;
+    }
+}

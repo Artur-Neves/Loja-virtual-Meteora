@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Vitual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+ 
+        <nav class="navbar  fixed navbar-expand-md  px-3 bg-black navbar-dark" style="background-color: black;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><h1><img src="img/logo-meteora.png" alt="logo-meteora"></h1></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Lojas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Novidades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Promoção</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 rounded-0" type="search" placeholder="Digite o produto" aria-label="Pesquisar">
+                  <button class="btn btn-outline-light rounded-0" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+  
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Diapositivo 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Diapositivo 2" class=""></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Diapositivo 3" class="active" aria-current="true"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+            <img class="img-fluid w-100 d-md-none" src="img/Mobile/banner1-mobile.png" alt="modelo com um um casaco verde florecente em um fundo lilás">
+            <img class="img-fluid w-100 d-none d-md-block d-xl-none" src="img/Tablet/banner1-tablet.png" alt="modelo com um um casaco verde florecente em um fundo lilás">
+            <img class="img-fluid w-100 d-none d-xl-block" src="img/Desktop/banner1-desktop.png" alt="modelo com um um casaco verde florecente em um fundo lilás">
+
+                
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid w-100 d-md-none" src="img/Mobile/banner2-mobile.png" alt="mulher com roupa preta em um fundo rosa">
+                <img class="img-fluid w-100 d-none d-md-block d-xl-none" src="img/Tablet/banner2-tablet.png" alt="mulher com roupa preta em um fundo rosa">
+                <img class="img-fluid w-100 d-none d-xl-block" src="img/Desktop/banner2-desktop.png" alt="mulher com roupa preta em um fundo rosa">
+                    
+                <div class="carousel-caption d-flex flex-column position-absolute posicao align-items-center justify-content-center ">
+                  <h5 class="display-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">COLEÇÃO ATEMPORAL</font></font></h5>
+                  <p class="fs-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estilo e qualidade para durar.</font></font></p>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img class="img-fluid w-100 d-md-none" src="img/Mobile/banner3-mobile.png" alt="homem com um terno branco em um fundo de cor laranja">
+                <img class="img-fluid w-100 d-none d-md-block d-xl-none" src="img/Tablet/banner3-tablet.png" alt="homem com um terno branco em um fundo de cor laranja">
+                <img class="img-fluid w-100 d-none d-xl-block" src="img/Desktop/banner3-desktop.png" alt="homem com um terno branco em um fundo de cor laranja">
+                   
+                <div class="carousel-caption d-flex flex-column position-absolute posicao align-items-center justify-content-center ">
+                  <h5 class="display-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">COLEÇÃO ATEMPORAL</font></font></h5>
+                  <p class="fs-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alto impacto visual, baixo impacto ambiental!</font></font></p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Anterior</font></font></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Próximo</font></font></span>
+            </button>
+          </div>
+          <h2 class="text-center my-5 display-5">Busque por categoria:</h2>
+          <div class="container row mx-auto g-4">
+            <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card">
+              <img class="d-md-none d-block" src="./img/Mobile/categorias/categoria-camiseta.png" alt="camiseta verde em um fundo amarelo">
+              <img class=" d-none d-md-block d-xl-none" src="./img/Tablet/categorias/categoria-camiseta.png" alt="camiseta verde em um fundo amarelo">
+              <img class="d-none d-xl-block" src="./img/Desktop/categorias/categoria-camiseta.png" alt="camiseta verde em um fundo amarelo">
+              <div class="card-header bg-black">
+                <p class="text-center text-light fw-bold">Categoria</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card">
+              <img class="d-md-none d-block" src="./img/Mobile/categorias/categoria-bolsas.png" alt="bolsa de coro em um fundo verde">
+              <img class=" d-none d-md-block d-xl-none" src="./img/Tablet/categorias/categoria-bolsas.png" alt="bolsa de coro em um fundo verde">
+              <img class="d-none d-xl-block" src="./img/Desktop/categorias/categoria-bolsa.png" alt="bolsa de coro em um fundo verde">
+               
+              <div class="card-header bg-black">
+                <p class="text-center text-light fw-bold">Categoria</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card">
+              <img class="d-md-none d-block" src="./img/Mobile/categorias/categoria-calcados.png" alt="Tênis branco em um fundo verde">
+              <img class=" d-none d-md-block d-xl-none" src="./img/Tablet/categorias/categoria-calcados.png" alt="Tênis branco em um fundo verde">
+              <img class="d-none d-xl-block" src="./img/Desktop/categorias/categoria-calcados.png" alt="Tênis branco em um fundo verde">
+              <div class="card-header bg-black">
+                <p class="text-center text-light fw-bold">Categoria</p>
+              </div>
+            </div>
+            </div>
+            <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card">
+              <img class="d-md-none d-block" src="./img/Mobile/categorias/categoria-calcas.png" alt="Calças dobradas em um fundo verde">
+              <img class=" d-none d-md-block d-xl-none" src="./img/Tablet/categorias/categoria-calcas.png" alt="Calças dobradas em um fundo verde">
+              <img class="d-none d-xl-block" src="./img/Desktop/categorias/categoria-calcas.png" alt="Calças dobradas em um fundo verde">
+              <div class="card-header bg-black">
+                <p class="text-center text-light fw-bold">Categoria</p>
+              </div>
+            </div>
+            </div>
+                <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card">
+              <img class="d-md-none d-block" src="./img/Mobile/categorias/categoria-casacos.png" alt="Casaco marrom em um fundo verde">
+              <img class=" d-none d-md-block d-xl-none" src="./img/Tablet/categorias/categoria-casacos.png" alt="Casaco marrom em um fundo verde">
+              <img class="d-none d-xl-block" src="./img/Desktop/categorias/categoria-casacos.png" alt="Casaco marrom em um fundo verde">
+              <div class="card-header bg-black">
+                <p class="text-center text-light fw-bold">Categoria</p>
+              </div>
+            </div>
+            </div>
+                <div class="col-6 col-md-4 col-xxl-2">
+            <div class="card">
+              <img class="d-md-none d-block" src="./img/Mobile/categorias/categoria-oculos.png" alt="Óculos escuro em um fundo verde">
+              <img class=" d-none d-md-block d-xl-none" src="./img/Tablet/categorias/categoria-oculos.png" alt="Óculos escuro em um fundo verde">
+              <img class="d-none d-xl-block" src="./img/Desktop/categorias/categoria-oculos.png" alt="Óculos escuro em um fundo verde">
+              <div class="card-header bg-black">
+                <p class="text-center text-light fw-bold">Categoria</p>
+              </div>
+            </div>
+            </div>
+          </div>
+
+         
+
+          <h2 class="container text-center my-5 display-5">Produtos que estão bombando!</h2>
+
+          <div class="container row mx-auto g-4">
+            <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card">
+              <img class="img-fluid w-100 d-md-none" src="img/Mobile/produtos/camiseta.png" alt="Modelo com uma caisata de cor marrom">
+              <img class="img-fluid w-100 d-none d-md-block d-xl-none" src="img/Tablet/produtos/camiseta.png" alt="Modelo com uma caisata de cor marrom">
+              <img class="img-fluid w-100 d-none d-xl-block" src="img/Desktop/produtos/camiseta.png" alt="Modelo com uma caisata de cor marrom"> 
+             <div class="card-body">
+                <h3 class="card-title fs-3 pb-2 fw-bold">Produto</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <h4 class="py-3 fs-5 fw-bold">R$ 30,00</h4>
+                <a href="#" class="btn btn-primary button-buy">Comprar</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card">
+              <img class="img-fluid w-100 d-md-none" src="img/Mobile/produtos/calca.png" alt="Modelo com uma calça na cor bege">
+              <img class="img-fluid w-100 d-none d-md-block d-xl-none" src="img/Tablet/produtos/calca.png" alt="Modelo com uma calça na cor bege">
+              <img class="img-fluid w-100 d-none d-xl-block" src="img/Desktop/produtos/calca.png" alt="Modelo com uma calça na cor bege">
+  
+              <div class="card-body">
+                <h3 class="card-title fs-3 pb-2 fw-bold">Produto</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <h4 class="py-3 fs-5 fw-bold">R$ 30,00</h4>
+                <a href="#" class="btn btn-primary button-buy">Comprar</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card">
+              <img class="img-fluid w-100 d-md-none" src="img/Mobile/produtos/tenis.png" alt="Modelo com um tênis branco">
+              <img class="img-fluid w-100 d-none d-md-block d-xl-none" src="img/Tablet/produtos/tenis.png" alt="Modelo com um tênis branco">
+              <img class="img-fluid w-100 d-none d-xl-block" src="img/Desktop/produtos/tenis.png" alt="Modelo com um tênis branco">
+  
+              <div class="card-body">
+                <h3 class="card-title fs-3 pb-2 fw-bold">Produto</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <h4 class="py-3 fs-5 fw-bold">R$ 30,00</h4>
+                <a href="#" class="btn btn-primary button-buy">Comprar</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card">
+              <img class="img-fluid w-100 d-md-none" src="img/Mobile/produtos/jaqueta-jeans.png" alt="Modelo com uma jaqueta-jeans">
+              <img class="img-fluid w-100 d-none d-md-block d-xl-none" src="img/Tablet/produtos/jaqueta-jeans.png" alt="Modelo com uma jaqueta-jeans">
+              <img class="img-fluid w-100 d-none d-xl-block" src="img/Desktop/produtos/jaqueta-jeans.png" alt="Modelo com uma jaqueta-jeans">
+  
+              <div class="card-body">
+                <h3 class="card-title fs-3 pb-2 fw-bold">Produto</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <h4 class="py-3 fs-5 fw-bold">R$ 30,00</h4>
+                <a href="#" class="btn btn-primary button-buy">Comprar</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card">
+              <img class="img-fluid w-100 d-md-none" src="img/Mobile/produtos/oculos.png" alt="Modelo com um óculos redondo">
+              <img class="img-fluid w-100 d-none d-md-block d-xl-none" src="img/Tablet/produtos/oculos.png" alt="Modelo com um óculos redondo">
+              <img class="img-fluid w-100 d-none d-xl-block" src="img/Desktop/produtos/oculos.png" alt="Modelo com um óculos redondo">
+  
+              <div class="card-body">
+                <h3 class="card-title fs-3 pb-2 fw-bold">Produto</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <h4 class="py-3 fs-5 fw-bold">R$ 30,00</h4>
+                <a href="#" class="btn btn-primary button-buy">Comprar</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card">
+              <img class="img-fluid w-100 d-md-none" src="img/Mobile/produtos/bolsa.png" alt="Modelo segurando uma bolsa na cor bege">
+              <img class="img-fluid w-100 d-none d-md-block d-xl-none" src="img/Tablet/produtos/bolsa.png" alt="Modelo segurando uma bolsa na cor bege">
+              <img class="img-fluid w-100 d-none d-xl-block" src="img/Desktop/produtos/bolsa.png" alt="Modelo segurando uma bolsa na cor bege">
+  
+              <div class="card-body">
+                <h3 class="card-title fs-3 pb-2 fw-bold">Produto</h3>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <h4 class="py-3 fs-5 fw-bold">R$ 30,00</h4>
+                <a href="#" class="btn btn-primary button-buy">Comprar</a>
+              </div>
+            </div>
+            </div>
+          </div>
+  <section class="facilidades bg-black color-green  mt-4 ">
+    <h2 class="display-5 px-5 py-4 text-center text-light">Conheça todas as nossas facilidades</h2>
+    <div class="d-flex flex-column flex-lg-row align-items-center  gap-4 gap-lg-0 pb-4 pb-xxl-5">
+    <div class="container row  text-center">
+      <div class="col-5 text-end "><i class="bi bi-x-diamond facilidades-icons"></i></div>
+      <div class="facilidades-container ">
+        <p class="facilidades-text-principal fw-bolder pb-4 text-start">PAGUE PELO PIX</p>
+        <p class="facilidades-text-secundario text-start">Ganhe 5% OFF em
+        pagamentos via PIX.</p></div>
+    </div>
+    <div class="container row  text-center">
+      <div class="col-5 text-end "><i class="bi bi-arrow-repeat facilidades-icons"></i></div>
+      <div class="facilidades-container ">
+        <p class="facilidades-text-principal fw-bolder pb-4 text-start">TROCA GRÁTIS</p>
+        <p class="facilidades-text-secundario text-start">Fique livre para trocar em até 30 dias.</p></div>
+    </div>
+    <div class="container row  text-center ">
+      <div class="col-5 text-end "><i class="bi bi-flower1 facilidades-icons"></i></div>
+      <div class="facilidades-container">
+        <p class="facilidades-text-principal fw-bolder pb-4 text-start">SUSTENTABILIDADE</p>
+        <p class="facilidades-text-secundario text-start">Moda responsável, que respeita o meio ambiente.</p></div>
+    </div>
+  </div>
+  </section class="cadastrar row mx-auto">
+  <form class="border border-secondary m-4 text-center px-5 col-11 col-md-6 col-xxl-5 mx-auto" id="form">
+    <h4 class="my-4 pb-3">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</h4>
+    <div class="my-4 input-group">
+      <input type="email" placeholder="Digite seu e-mail"  aria-label="Digite seu e-mail" aria-describedby="button-addon2" class="form-control border border-secondary rounded-0" id="exampleFormControlInput1" /> 
+<button type="button" id="button-addon2"  class="btn btn-outline-secondary">Enviar</button>
+    </div>
+  </form>
+  </section>
+    <footer class="text-center bg-black">
+      <p class="py-4 text-light">2023 <i class="bi bi-c-circle"></i> Desenvolvido por Artur Neves | Projeto fictício sem fins comerciais.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
